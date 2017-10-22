@@ -130,7 +130,7 @@ public class PreferenceUITest{
 //        onView(withChild(withChild(allOf(withResourceName("title"), withText("Auto power on")))))
 //                .check(selectedDescendantsMatch(isAssignableFrom(Switch.class), withResourceName("switch_widget"))).check(matches(isDisplayed()));
         onView(withChild(withChild(allOf(withResourceName("title"), withText("Auto power on")))))
-                .check(selectedDescendantsMatch(isAssignableFrom(Switch.class), withSwitchPreferenceChecked(true))).check(matches(isDisplayed()));
+                .check(selectedDescendantsMatch(isAssignableFrom(Switch.class), withSwitchPreferenceChecked(false))).check(matches(isDisplayed()));
 
     }
 }
